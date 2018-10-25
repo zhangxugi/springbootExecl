@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function downloadfile(){
+            window.location.href="/UserExcelDownloads";
+        }
+
+    </script>
+</head>
+<body>
+<table border="0" style="margin-top:4px; margin-left: 18px">
+    <tr>
+        <td><a href="#" class="easyui-linkbutton" onclick="downloadfile();">数据导出</a></td>
+
+    </tr>
+
+</table>
+
+<form class="form-horizontal" id="form_table" action="#" th:action="@{/Excelfile}" enctype="multipart/form-data" method="post">
+    <input class="form-input" type="file" name="file"></input>
+    <br/>
+    <button type="submit" class="btn">开始导入</button>
+
+</form>
+</body>
+</html>
