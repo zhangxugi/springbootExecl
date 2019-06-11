@@ -37,7 +37,7 @@ public class TearCollertr {
 
         String fileName = "userinf"  + ".xls";//设置要导出的文件的名字
         //新增数据行，并且设置单元格数据
-
+System.out.println("ssss");
         int rowNum = 1;
 
         String[] headers = { "学号", "姓名", "身份类型", "登录密码"};
